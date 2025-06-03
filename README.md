@@ -46,7 +46,7 @@ des corrections.
 
 ## Contact
 
-Pour toute question ou commentaire, veuillez nous contacter à [votre adresse e-mail].
+Pour toute question ou commentaire, veuillez nous contacter à 
 
 ## Licence
 
