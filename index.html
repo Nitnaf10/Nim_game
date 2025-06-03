@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jeu de Nim – Par Nitnaf10</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Jeu des Bâtonnets</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>But du jeu</h2>
+                <p>
+                    Le jeu des bâtonnets est un jeu de stratégie captivant qui oppose deux joueurs. Chacun des joueurs
+                    retire à tour de rôle entre 1 et <strong>n</strong> bâtonnets d'un tas commun. L'objectif principal
+                    est de ne pas être celui qui prend le dernier bâtonnet, car cela signifie la défaite. Ce jeu met à
+                    l'épreuve non seulement la capacité de réflexion stratégique des joueurs, mais aussi leur aptitude à
+                    anticiper les mouvements de l'adversaire.
+                </p>
+                <p>
+                    Les règles sont simples, mais la profondeur stratégique du jeu en fait un défi intéressant. Les
+                    joueurs doivent constamment évaluer leurs options et réfléchir à la meilleure façon de forcer leur
+                    adversaire à faire un mouvement défavorable.
+                </p>
+            </section>
+            <section id="play">
+                <h2>Jouez contre le bot!</h2>
+                <div class="center">
+                    <a href="game.html" class="btn">🎮 Jouer au Jeu</a>
+                </div>
+                <p>
+                    En jouant contre le bot, vous aurez l'occasion de tester vos compétences stratégiques dans un
+                    environnement contrôlé. Le bot est conçu pour simuler un adversaire humain, utilisant des
+                    algorithmes pour prendre des décisions basées sur la position actuelle des bâtonnets. Cela vous
+                    permettra de vous familiariser avec les différentes stratégies et d'améliorer votre jeu.
+                </p>
+            </section>
+            <section>
+                <h2>Jouer contre un bot</h2>
+                <p>
+                    Dans cette version, vous pouvez vous entraîner contre un <strong>bot intelligent</strong> qui
+                    utilise une stratégie mathématique avancée. Ce bot est programmé pour analyser les positions et
+                    choisir les mouvements qui maximisent ses chances de gagner. En jouant contre lui, vous apprendrez à
+                    reconnaître les schémas de jeu et à développer vos propres stratégies.
+                </p>
+                <p>
+                    Vous avez également la possibilité de jouer à deux joueurs, ce qui rend le jeu encore plus
+                    interactif et amusant. Que vous choisissiez de jouer contre un ami ou de laisser le bot commencer en
+                    premier, chaque partie sera unique et pleine de surprises.
+                </p>
+            </section>
+
+            <section>
+                <h2>Stratégie gagnante</h2>
+                <p>
+                    Pour gagner au jeu des bâtonnets, il est essentiel de forcer votre adversaire à se retrouver dans
+                    une position <strong>perdante</strong>. Cela signifie que vous devez anticiper les mouvements de
+                    votre adversaire et planifier vos propres coups en conséquence. La clé est de comprendre quelles
+                    positions sont favorables et lesquelles sont défavorables.
+                </p>
+                <p>
+                    Les positions perdantes sont celles qui, en commençant du premier bâtonnet, sont écartées du nombre
+                    maximum de bâtonnets récupérables en un coup. Par exemple, si le maximum est 3, alors les positions
+                    perdantes sont celles où le nombre de bâtonnets restants est de 1, 5, 9, 13, 17, 21, etc. En
+                    atteignant ces positions, vous pouvez forcer votre adversaire à prendre le dernier bâtonnet.
+                </p>
+                <p>
+                    <strong>Exemple :</strong> Si vous êtes en mesure de laisser votre adversaire avec 5 bâtonnets, peu
+                    importe le nombre de bâtonnets qu'il retire (1, 2 ou 3), vous pourrez toujours le forcer à se
+                    retrouver dans une position perdante lors de votre prochain tour. Cela nécessite une planification
+                    minutieuse et une bonne compréhension des dynamiques du jeu.
+                </p>
+                <p>
+                    <strong>Schéma des positions perdantes :</strong>
+                    <strong><em>|</em>|||<em>|</em>|||<em>|</em>|||<em>|</em>|||<em>|</em>|||<em>|</em>|||....</strong>
+                </p>
+                <p>Les bâtonnets en bleu sont perdants. On peut les énumérer comme suit :</p>
+                <code>1, 5, 9, 13, 17, 21...</code>
+                <p>
+                    en résumé, le jeu des bâtonnets est non seulement un excellent moyen de passer le temps, mais aussi
+                    une manière amusante d'améliorer vos compétences en stratégie et en prise de décision. En comprenant
+                    les positions gagnantes et perdantes, vous serez mieux préparé à affronter vos adversaires, qu'ils
+                    soient humains ou bots. N'hésitez pas à expérimenter différentes stratégies et à affiner votre
+                    approche au fur et à mesure que vous jouez. Bonne chance et amusez-vous bien !
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <h2>Droits d'Auteur</h2>
+            <p>&copy; 2025 Nitnaf10. Tous droits réservés.</p>
+            <p>Ce projet est sous <a href="MIT.html">licence MIT</a>.</p>
+
+            <h2>Contact</h2>
+            <p>Voir mes autres projets : <a href="https://github.com/Nitnaf10">GitHub/Nitnaf10</a></p>
+            <p>Me contacter : <a href="https://discord.gg/fD93VcDE5E">Discord – Nitnaf's Tools</a></p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+        <script>
+            VANTA.HALO({
+                el: "#play",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                amplitudeFactor: 3.0,
+                size: 2
+            });
+        </script>
+    </body>
+</html>
