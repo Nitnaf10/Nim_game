@@ -1,4 +1,4 @@
-# Licence MIT Modifiée
+# Licence MIT
 
 Copyright (c) 2025 Nitnaf10
 
