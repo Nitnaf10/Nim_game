@@ -3,7 +3,7 @@
 Bienvenue dans le jeu de Nim en ligne, un défi stratégique où la réflexion et la tactique sont essentielles pour vaincre
 vos adversaires !
 ## Jouer
-> Utilisez ce lien pour jouer: [NIM](https://nitnaf10.github.io/Portofolio/Nim_game/)
+> Utilisez ce lien pour jouer: [NIM](https://nitnaf10.github.io/Nim_game/)
 ## Description
 
 Le jeu des bâtonnets est un jeu de stratégie captivant qui oppose deux joueurs. Chacun des joueurs retire à tour de rôle
