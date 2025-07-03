@@ -46,7 +46,7 @@ des corrections.
 
 ## Contact
 
-Pour toute question ou pour voir d'autres projets, visitez mon [profil GitHub](https://github.com/Nitnaf10) ou rejoignez mon serveur Discord [Nitnaf's Tools](https://discord.gg/fD93VcDE5E).
+Pour toute question ou pour voir d'autres projets, visitez mon [profil GitHub](https://github.com/Nitnaf10) ou rejoignez mon serveur Discord [Nitnaf's Tools](https://discord.gg/XVyHTVMwU4).
 
 ## Licence
 
